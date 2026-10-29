@@ -226,10 +226,10 @@ export default function Home() {
                 Ver plataforma
               </Link>
               <Link
-                href="/contacto"
+                href="/demo"
                 className="inline-flex items-center gap-2 rounded-card bg-navy px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
               >
-                Agendar demostración
+                Solicitar demo
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

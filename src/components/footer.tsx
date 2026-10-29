@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { APP_LOGIN_URL } from "@/lib/links";
 
 export function Footer() {
   const year = 2026;
@@ -48,6 +49,11 @@ export function Footer() {
           <h3 className="text-sm font-semibold text-navy">Contacto</h3>
           <ul className="mt-3 space-y-2 text-sm text-gris-600">
             <li>
+              <Link href="/demo" className="hover:text-navy">
+                Solicitar demo
+              </Link>
+            </li>
+            <li>
               <Link href="/contacto" className="hover:text-navy">
                 Solicitar propuesta
               </Link>
@@ -59,12 +65,10 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="https://clubservice.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={APP_LOGIN_URL}
                 className="hover:text-navy"
               >
-                App de reservas
+                Iniciar sesión en la app
               </a>
             </li>
           </ul>

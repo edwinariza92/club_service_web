@@ -39,10 +39,10 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/contacto"
+            href="/demo"
             className="rounded-card bg-navy px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-navy-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
           >
-            Solicitar propuesta
+            Solicitar demo
           </Link>
         </nav>
         <button
@@ -68,11 +68,11 @@ export function Header() {
               </Link>
             ))}
             <Link
-              href="/contacto"
+              href="/demo"
               className="mt-2 rounded-card bg-navy px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-navy-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
               onClick={() => setOpen(false)}
             >
-              Solicitar propuesta
+              Solicitar demo
             </Link>
           </nav>
         </div>

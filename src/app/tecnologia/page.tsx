@@ -48,15 +48,15 @@ export default function Tecnologia() {
         <div className="mt-10 rounded-panel border border-gris-300 bg-white p-8 shadow-suave md:p-10">
           <h2 className="text-2xl font-semibold">Demostración</h2>
           <p className="mt-2 max-w-2xl text-gris-600">
-            Podemos mostrarle el flujo de reservas y avisos con un entorno de
-            demostración.
+            Podemos mostrarle el flujo de reservas, avisos y administración en
+            una demostración guiada.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Link
-              href="/contacto"
+              href="/demo"
               className="inline-flex items-center gap-2 rounded-card bg-navy px-6 py-3 text-sm font-semibold text-white hover:bg-navy-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky"
             >
-              Agendar demostración
+              Solicitar demo
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a

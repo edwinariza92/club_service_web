@@ -1,4 +1,6 @@
-import { Mail, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Mail, MessageCircle } from "lucide-react";
+import { EMAIL_CONTACTO, WHATSAPP_PROYECTO } from "@/lib/links";
 
 export const metadata = {
   title: "Contacto",
@@ -23,6 +25,24 @@ export default function Contacto() {
         </div>
       </section>
       <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-6">
+        <div className="mb-8 flex flex-col gap-4 rounded-panel border border-esmeralda/40 bg-esmeralda-100 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold text-navy">
+              ¿Prefiere ver primero la plataforma?
+            </h2>
+            <p className="mt-1 text-sm text-gris-600">
+              Solicite una demostración guiada de 20 a 30 minutos.
+            </p>
+          </div>
+          <Link
+            href="/demo"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-card bg-navy px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-700"
+          >
+            Solicitar demo
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+
         <div className="grid gap-8 lg:grid-cols-2">
           <article className="rounded-panel border border-gris-300 bg-white p-8 shadow-suave">
             <h2 className="text-2xl font-semibold">Escríbanos</h2>
@@ -31,7 +51,7 @@ export default function Contacto() {
             </p>
             <div className="mt-6 grid gap-4">
               <a
-                href="https://wa.me/573000000000?text=Hola%2C%20quisiera%20solicitar%20una%20propuesta%20para%20la%20operaci%C3%B3n%20de%20mi%20Club%20House"
+                href={WHATSAPP_PROYECTO}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 rounded-card border border-gris-300 p-4 transition-colors hover:bg-gris-50"
@@ -41,11 +61,11 @@ export default function Contacto() {
                 </div>
                 <div>
                   <p className="font-semibold text-navy">WhatsApp</p>
-                  <p className="text-sm text-gris-600">Respuesta ágil</p>
+                  <p className="text-sm text-gris-600">304 452 5315</p>
                 </div>
               </a>
               <a
-                href="mailto:contacto@clubservice.co"
+                href={`mailto:${EMAIL_CONTACTO}?subject=${encodeURIComponent("Solicitud de propuesta - Club Service")}`}
                 className="flex items-center gap-4 rounded-card border border-gris-300 p-4 transition-colors hover:bg-gris-50"
               >
                 <div className="flex h-11 w-11 items-center justify-center rounded-card bg-navy/5">
@@ -53,7 +73,7 @@ export default function Contacto() {
                 </div>
                 <div>
                   <p className="font-semibold text-navy">Correo</p>
-                  <p className="text-sm text-gris-600">contacto@clubservice.co</p>
+                  <p className="text-sm text-gris-600">{EMAIL_CONTACTO}</p>
                 </div>
               </a>
             </div>

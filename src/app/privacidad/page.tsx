@@ -1,3 +1,5 @@
+import { EMAIL_CONTACTO } from "@/lib/links";
+
 export const metadata = {
   title: "Política de privacidad",
   description: "Política de tratamiento de datos personales de Club Service.",
@@ -28,7 +30,7 @@ export default function Privacidad() {
           <h2>Derechos</h2>
           <p>Usted tiene derecho a conocer, actualizar, rectificar y suprimir sus datos, o revocar la autorización.</p>
           <h2>Contacto</h2>
-          <p>Para ejercer sus derechos escriba a contacto@clubservice.co</p>
+          <p>Para ejercer sus derechos escriba a {EMAIL_CONTACTO}</p>
           <p className="text-sm text-gris-600">Última actualización: 2026-10-22</p>
         </article>
       </section>
