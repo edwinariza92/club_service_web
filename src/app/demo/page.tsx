@@ -14,6 +14,7 @@ export const metadata = {
   title: "Solicitar demo",
   description:
     "Solicite una demostración guiada de la plataforma de reservas de Club Service.",
+  alternates: { canonical: "/demo" },
 };
 
 const puntos = [

@@ -5,6 +5,7 @@ import { EMAIL_CONTACTO, WHATSAPP_PROYECTO } from "@/lib/links";
 export const metadata = {
   title: "Contacto",
   description: "Solicite una propuesta para la operación integral de su Club House.",
+  alternates: { canonical: "/contacto" },
 };
 
 export default function Contacto() {

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Nosotros",
   description: "Club Service: operación integral de Club Houses y conjuntos residenciales.",
+  alternates: { canonical: "/nosotros" },
 };
 
 export default function Nosotros() {

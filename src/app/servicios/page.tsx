@@ -14,6 +14,7 @@ const items = [
 export const metadata = {
   title: "Servicios",
   description: "Recepción, piscina, gimnasio, aseo, todería, actividades y mantenimiento menor para Club Houses.",
+  alternates: { canonical: "/servicios" },
 };
 
 export default function Servicios() {

@@ -12,6 +12,7 @@ const features = [
 export const metadata = {
   title: "Tecnología",
   description: "Plataforma propia de reservas, avisos, PQRS y control para Club Houses.",
+  alternates: { canonical: "/tecnologia" },
 };
 
 export default function Tecnologia() {

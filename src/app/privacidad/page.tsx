@@ -3,6 +3,7 @@ import { EMAIL_CONTACTO } from "@/lib/links";
 export const metadata = {
   title: "Política de privacidad",
   description: "Política de tratamiento de datos personales de Club Service.",
+  alternates: { canonical: "/privacidad" },
 };
 
 export default function Privacidad() {
