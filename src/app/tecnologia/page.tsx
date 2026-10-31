@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Bell, CalendarDays, CreditCard, Users } from "lucide-react";
+import { APP_URL } from "@/lib/links";
 
 const features = [
   { icon: CalendarDays, title: "Reservas", desc: "Zonas comunes con horarios, aforo y reglas por conjunto." },
@@ -60,7 +61,7 @@ export default function Tecnologia() {
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a
-              href="https://clubservice.netlify.app"
+              href={APP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-card border border-gris-300 px-6 py-3 text-sm font-semibold text-navy hover:bg-gris-50"

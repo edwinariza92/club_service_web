@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   description:
     "Operamos y administramos Club Houses y conjuntos residenciales con equipo en sitio, procesos claros y tecnología propia de reservas.",
-  metadataBase: new URL("https://clubservice.co"),
+  metadataBase: new URL("https://clubservice.com.co"),
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_CO",
-    url: "https://clubservice.co",
+    url: "https://clubservice.com.co",
     siteName: "Club Service",
     title: "Club Service | Operación integral de Club Houses",
     description:
